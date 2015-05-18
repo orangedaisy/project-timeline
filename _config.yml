@@ -32,6 +32,6 @@ sass:
   style:    :compressed
 
 # Setup
-baseurl:  /frommyfrontporch
+baseurl:  /project-timeline
 paginate: 5
 exclude:  [templates]
