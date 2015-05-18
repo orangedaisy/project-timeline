@@ -15,6 +15,7 @@ highlighter: pygments
 # the index work properly.
 permalink:           /:year/:month/:day/:title
 relative_permalinks: true
+linked_posts: true
 
 # Rakefile settings
 post:
