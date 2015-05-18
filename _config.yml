@@ -1,16 +1,37 @@
-pygments: true
-permalink: /:year/:month/:day/:title
-title: My Project Timeline
-baseurl: /project-timeline
+# This file contains Jekyll configuration options.
+#
+# For site variables, head over to /_data
+#
+# These groups have been arranged alphabetically by header;
+# feel free to toss them in whatever order suits you.
+
+# Dependencies
+markdown:    redcarpet
+highlighter: pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from
+# the index work properly.
+permalink:           /:year/:month/:day/:title
+relative_permalinks: true
 linked_posts: true
 
-# Sets the default folder in Prose.io
-# Sets the default metadata in Prose.io
-prose:
-  rooturl: "_posts"
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
+# Rakefile settings
+post:
+  template:  templates/_post.txt
+  extension: md
+page:
+  template:  templates/_page.txt
+  extension: md
+editor: vim
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style:    :compressed
+
+# Setup
+baseurl:  /frommyfrontporch
+paginate: 5
+exclude:  [templates]
